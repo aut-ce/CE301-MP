@@ -1,0 +1,50 @@
+Microprocessors and Assembly Language, Fall 2019
+
+Lec. 12
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 1, Chap. 5.5, Chap. 5.6, Chap. 6, Chap. 7.3, Chap. 13, Chap. 14, Chap. 15
+		
+Lec. 13
+	Cortex™-M3 Revision r2p1 Technical Reference Manual
+		Chap. 5
+		
+Lec. 14
+	https://www.keil.com/pack/doc/cmsis/Core/html/group__NVIC__gr.html#details
+	Cortex™-M3 Revision r2p1 Technical Reference Manual
+		Chap. 5
+
+Lec. 15
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 31
+		
+Lec. 16
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 32		
+		
+Lec. 17
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 33
+	https://en.wikipedia.org/wiki/I%C2%B2C
+
+Lec. 18
+	http://www.circuitbasics.com/basics-uart-communication/
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 34
+		
+Lec. 19
+	http://www.circuitbasics.com/basics-uart-communication/
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 35
+		
+Lec. 20
+	https://www.analogictips.com/pulse-width-modulation-pwm/
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 38
+		
+Lec. 21
+	https://www.analogictips.com/pulse-width-modulation-pwm/
+	Atmel | SMART ARM-based MCU DATASHEET, SAM3X / SAM3A Series, Atmel-11057C-ATARM-SAM3X-SAM3A-Datasheet_23-Mar-15
+		Chap. 43, Chap. 44
+		
+			
+		
