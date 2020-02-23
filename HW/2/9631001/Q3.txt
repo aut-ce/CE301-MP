@@ -1,0 +1,10 @@
+		;		code for add 0xF4F635225A and 0x61F4129FFB
+		;		created by _MuhmdrezA
+		
+		LDR		R2, =0xF635225A
+		LDR		R3, =0xF4129FFB
+		MOV		R4, #0xF4
+		MOV		R5, #0x61
+		
+		ADDS		R0, R2,R3
+		ADC		R1, R4, R5

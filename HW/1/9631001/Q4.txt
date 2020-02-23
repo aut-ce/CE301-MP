@@ -1,0 +1,7 @@
+		;		code for Question 4
+		;		Created by _MuhmdrezA
+		;		Rotating R1 by R2 and load in R3
+		
+		LDR		R1, =0x54000000 ; define elements 
+		MOV		R2, #2
+		MOV		R3, R1, ROR R2 ; code

@@ -1,0 +1,16 @@
+		;		a code for find GCD of R0 and R1
+		;		created by _MuhmdrezA
+		MOV		R0, #12
+		MOV		R1, #45
+		;		gcd (x, y) { while (x!=y){ if x>y return gcd(x-y , y) else return gcd (x, y-x)} return x;}
+		
+GCD
+while	CMP		R0, R1
+		BEQ		endw 	 ; return if R0 == R1
+		BGT		cond1	 ; if R0 > R1
+		BLT		cond2	 ; elseif R1 < R0
+cond1	SUB		R0, R0, R1 ; R0=R0-R1
+		B		while
+cond2	SUB		R1, R1, R0
+		B		while
+endw		end

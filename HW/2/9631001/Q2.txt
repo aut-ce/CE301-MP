@@ -1,0 +1,23 @@
+		;		a assembly code for calc n!
+		;		created by _MuhmdrezA
+		
+MAIN		MOV		R0, #5 ; n= R0
+		MOV		R10, #1 ; the result is R10
+		BL		FACT ; go to factorial
+		
+FACT		CMP		R0, #2 	; if R10 <=1 return 1
+		BHS		OVER 	; else return factorial n
+		END
+OVER
+		BL		MUL
+COUNTINUE
+		SUB		R0, R0, #1 ; n--
+		B		FACT		
+		
+MUL		MOV		R1, R0 	; r1 = n 
+		MOV		R2, R10	; r2 = result
+AD		ADD		R10, R10, R2	; result += result (n*x = x+x+...+x (n times))
+		SUB		R1,R1,#1 	; r1-- 
+		CMP		R1, #1	
+		BNE		AD		; return to ad
+		B		COUNTINUE	; factorial continues

@@ -1,0 +1,8 @@
+		LDR		R0, =1
+		LDR		R1, =0x100
+		
+START	STRB		R0, [R1]
+		ADD		R1,R1, #1
+		ADDS		R0 ,R0, #1
+		CMP		R0, #10
+		BCC		START

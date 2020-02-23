@@ -1,0 +1,8 @@
+Sort		STMFD	SP!, {R2} ; save R2 in stack
+		CMP		R0, R1
+		BLE		Done 	; branch to Done if R0<R1 (is sorted)
+		MOV		R2, R1 	; else swap R0 and R1, (R2 is temp variable)
+		MOV		R1, R0
+		MOV		R0, R2
+Done		LDMFD	SP!, {R2} ; Reload R2 from stack
+		MOV		PC, LR 	; retun

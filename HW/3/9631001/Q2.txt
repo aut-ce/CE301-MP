@@ -1,0 +1,35 @@
+			;		code for find min and max of an array of integers.
+			;		used from stack
+			;		stack used FA.
+			;		create by _MuhmdrezA
+			
+MAIN			MOV		R0, #5	; init n
+			BL		FILL_DATA ; can use another method to fill stack
+			STMFA	SP!, {R0} ; push n
+			BL		FIND_MIN_MAX
+			LDMFA	SP!, {R10 , R11}
+			END
+			
+FIND_MIN_MAX	LDMFA	SP!, {R0} ; pop n
+			LDR		R1, =0xFFFFFF ; min
+			MOV		R2, #0 ; max
+LOOP			CMP		R0, #0
+			STMFAEQ	SP!, {R1, R2} ; push results
+			MOVEQ	PC, LR ; return
+			LDMFA	SP!, {R4} ; pop number
+			CMP		R4 , R1
+			MOVLT	R1, R4 ; if R4 < R1 then R1 = R4
+			CMP		R4, R2
+			MOVGT	R2, R4 ; if R4 > R2 then R2 = R4
+			SUB		R0, R0, #1 ; counter--
+			B		LOOP
+			
+FILL_DATA		MOV		R4, R0 ; counter = 0
+			;		create a for in range n and fill the stack with it
+			MOV		R5, R0
+START_LOOP	ADD		R5,R5, #5 ; fake data in stack
+			STMFA	SP!,{ R5 } ; push data in stack
+			SUB		R4 , R4, #1
+			CMP		R4 , #0
+			BNE		START_LOOP
+			MOV		PC, LR

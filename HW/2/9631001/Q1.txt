@@ -1,0 +1,21 @@
+		;		created by _MuhmdrezA
+		;		student number: 9631001
+		;		find a pattern in register 
+		;		load student number in R10
+		LDR		R10, =9631001
+PATTERN	EQU		0x5 ;pattern that we must find (2_101)
+_111		EQU		0x7 ;7
+INDEX	EQU		28
+		
+		;		initial variables
+		MOV		R0, #0 		; Count of pattern
+		MOV		R1, #INDEX 	; index
+FIND		; R2 = Temp
+		AND		R2, R10, #_111 	; convert to 00....0xxx
+		CMP		R2, #PATTERN	; compare with 00...0101
+		ADDEQ	R0, R0, #1	; count ++ if equals
+		MOV		R10, R10, ROR #1	; rotate R10
+		SUBS		R1, R1, #1	; i--
+		BNE		FIND			
+		
+		

@@ -1,0 +1,21 @@
+		;;		CREATED BY _MuhmdrezA
+		;;		code for Question 7 HW1
+		LDR		R2,  =10 ; counter for loop
+		LDR		R3, =0x8000000 ; inital number (first element in array)
+		MOV		R0,#0 ; sum = 0
+AGAIN	ADD		R0,R0,#10 ; sum += 10
+		SUBS		R2,R2,#1 ; counter -- and set flags
+		STR		R0,[R3] ; store value of R0 in a cell in ram with index R3
+		ADD		R3,R3,#4 ; increase value of R3 , R3 +=4, because each element is 4 byte (32 bit)
+		BNE		AGAIN ; return to Again if Z!=0 else go next line ( END )
+		;		now we calc sum of array's element
+		MOV		R5, #0 ; sum of elements
+		;;		now we have a array in ram with elements {10 ,20 ,30, 40, 50, 60, 70, 80, 90, 100}
+		;;		Assume it is not overflow
+SUM		LDR		R4, [R3]   ; load element in a register
+		ADD		R5, R5, R4 ; add register with R5
+		SUB		R3, R3, #4 ; update address
+		ADD		R2, R2, #1 ; counter ++
+		CMP		R2, #11	 ; for break from loop
+		BNE		SUM 		 ; return to SUM
+		
